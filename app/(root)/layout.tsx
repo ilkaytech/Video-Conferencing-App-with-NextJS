@@ -1,5 +1,15 @@
+import { ReactNode } from "react";
+
 import StreamVideoProvider from "@/providers/StreamClientProvider";
-import React, { ReactNode } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ilkaytech",
+  description: "Video Calling App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
